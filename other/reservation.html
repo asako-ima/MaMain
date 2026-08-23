@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reservation | Ma Main relaxation salon</title>
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="./reservation.css">
+</head>
+<body>
+  <header>
+    <div class="header-nav">
+      <div class="header-logo">
+        <a href="../index.html"><img src="../assets/img/common/logoimage.png" alt="MaMainロゴ画像"></a>
+        <button class="toggle-menu-btn"><span></span></button>
+      </div>
+      <ul class="header-inner">
+        <li><a href="../index.html">home</a></li>
+        <li><a href="../menu.html">menu</a></li>
+        <li><a href="../products.html">products</a></li>
+        <li><a href="../contact.html">contact</a></li>
+        <li><a href="../access.html">access</a></li>
+      </ul>
+      </div>
+  </header>
+  <main>
+    <div class="leaf fadeup">
+       <div class="top-logo">
+         <h1>reservation</h1>
+       </div>
+    </div>
+    <div class="contact fadeup">
+         <h2>reservationフォーム</h2>
+         <p>ご予約のキャンセルは前日17時までとさせていただきます。
+         </p>
+      <form class="contact-form">
+
+      <div class="field">
+        <label for="name" id="required">Name</label>
+        <input type="text" id="name" placeholder="お名前を入力してください" required> 
+      </div>
+
+      <div class="field">
+        <label for="email" id="required">E-mail</label>
+        <input type="email" id="email" placeholder="メールアドレスを入力してください" required>
+      </div>
+      
+      <div class="field">
+        <label for="tel" id="required">tel</label>
+        <input type="tel" id="tel" placeholder="電話番号を入力してください" required>
+      </div>
+      
+       <div class="field">
+         <label for="reserve-time" id="required">ご予約日：</label>
+         <input name="date" type="date" required>
+       </div>
+       <div class="field">
+          <label for="time" id="required">ご予約時間</label>
+          <select name="genre" id="select">
+            <option value="予約希望時間を選択してください">予約希望時間を選択してください</option>
+            <option value="10:30">10:30</option>
+            <option value="11:30">11:30</option>
+            <option value="13:00">13:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:30">15:30</option>
+          </select>
+       </div>
+       <div class="field">
+          <label for="menu" id="required">メニュー選択</label>
+        <select name="genre" id="select">
+          <option value="メニューを選択してください">メニューを選択してください</option>
+          <optgroup label="アロマ バランシングボディ">
+            <option value="アロマ バランシングボディ">アロマ バランシングボディ 60分 &yen; 18,000</option>
+            <option value="アロマ バランシングボディ">アロマ バランシングボディ 90分 &yen; 25,000</option>
+            <option value="アロマ バランシングボディ">アロマ バランシングボディ 120分 &yen; 32,000</option>
+          </optgroup>
+
+          <optgroup label="アロマ フェイシャル">
+            <option value="アロマ フェイシャル">アロマ フェイシャル 60分 &yen; 18,000</option>
+            <option value="アロマ フェイシャル">アロマ フェイシャル 75分 &yen; 25,000</option>
+          </optgroup>
+
+          <optgroup label="リフレクソロジー">
+            <option value="リフレクソロジー">リフレクソロジー 30分 &yen; 5,000</option>
+            <option value="リフレクソロジー">リフレクソロジー 40分 &yen; 10,000</option>
+          </optgroup>
+
+          <optgroup label="ドライヘッドスパ">
+            <option value="ドライヘッドスパ">ドライヘッドスパ 20分 &yen; 5,000</option>
+            <option value="ドライヘッドスパ">ドライヘッドスパ 40分 &yen; 8,000</option>
+          </optgroup>
+
+          <optgroup label="限定トリートメント">
+            <option value="限定トリートメント">８月限定トリートメント 120分 &yen; 28,000</option>
+            <option value="限定トリートメント">Full Moon限定トリートメント 90分 &yen; 20,000</option>
+            <option value="限定トリートメント">New Moon限定トリートメント 90分 &yen; 20,000</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="field radio-group">
+          <label>予約する<input type="radio" name="reservation" value="予約する" checked></label>
+          <label>キャンセルする<input type="radio" name="reservation" value="キャンセルする"></label>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="ご不明点やご不安な点、アレルギーやお身体の注意点・禁忌事項がある場合、また製品のお取り置きをご希望の方はこちらに記入してください"></textarea>
+      </div>
+
+      <p class="form-note">
+        １営業日以内にご予約確認メールをお送り致します。<br>
+        混雑時は遅れる場合がございます。予めご了承くださいませ。
+      </p>
+
+      <div class="btn-area">
+        <button type="submit" class="button">
+        送信</button>
+      </div>
+       
+    </form>
+</div>
+
+<div class="section">
+ <section>
+   <h2 class="fadeup">－ご予約当日について－</h2>
+   <p class="fade-up">ご予約時間に遅れて到着される場合、<br>
+     サービス時間を短縮させていただく場合がございますのでご了承ください。<br>
+     初めてのお客様につきましては、カウンセリングをさせていただく為、<br>
+     ご予約時間の１０分前迄にご来店ください。<br>
+     やむを得ない事情で当日時間に遅れる場合は、早めのご連絡をお願いいたします。</p>
+ </section>
+
+ <section>
+   <h2 class="fadeup">－ご予約のキャンセルについて－</h2>
+   <p class="fade-up">当サロンは完全予約制となっております。<br>
+    予約のキャンセルや変更は前日の17時迄に<br>
+    ご連絡をお願いいたします。<br>
+    当日の予約の変更は、他のお客様のご迷惑になりうる可能性がありますのでご遠慮ください。</p>
+  </section>
+</div>
+    
+   <div class="btn-area">
+      <a href="../menu.html" class="button">&larr;menuを見る</a>
+   </div>
+
+  </main>
+    <footer>
+    <div class="footer-nav">
+      <div class="footer-logo">
+       <img src="../assets/img/common/logoimage.png" alt="Ma Mainロゴ">
+      </div>
+     <div class="follow">
+      <a href=""><img src="../assets/img/common/facebook.png" alt="facebook"></a>
+      <a href=""><img src="../assets/img/common/instagram.png" alt="instagram"></a>
+     </div>
+     <p>tel : 1234-56-7890</p>
+     <p>adress : 京都府南丹市日吉町胡麻１２－３４</p>
+     <p>open : wed - fri&nbsp;&nbsp;１０：００～１７：００</p>
+    </div>
+    <p class="copy-right"><small>&copy;Ma Main relaxation salon</small></p>
+  </footer>
+   <!-- <script src="../assets/js/jquery-4.0.0.min.js"></script> -->
+  <script src="../assets/js/jquery-4.0.0.slim.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

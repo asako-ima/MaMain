@@ -1,0 +1,167 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+  
+.top-img img{
+  width: 100%;
+  max-width: 1920px; 
+  height: 70vh;
+  object-fit: cover;
+  object-position: 50% 75%;
+  margin-top: 70px;
+}
+
+/* ホワイトロゴ */
+.top-img{
+  position: relative;
+}
+
+.logo-white{
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  z-index: 10;
+}
+
+.logo-white img{
+  display: block;
+  object-fit: cover;
+  width: 350px;
+  height: auto;
+  filter: drop-shadow(.5px .5px 20px #504038);
+}
+  
+.top-logo{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  filter: drop-shadow(3px 3px 8px #fff);
+  text-decoration: none;
+  color: #5a473d;
+}
+
+h1{
+  font-size: 1.7rem;
+  line-height: 3rem;
+  letter-spacing: 0.3em;
+  font-weight: 600;
+}
+
+.leaf{
+  position: relative;
+  top: 20px;
+  padding: 0;
+  margin: 0 auto; 
+  width: 500px;
+  height: 280px;
+  background-image: url(../img/common/reaf-frame3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 5px #00000087);
+}
+
+main{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  background-image: url(../img/index/back-img.png);
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: lighten; 
+}
+
+.map img{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: block;
+}
+
+.google-link a{
+  display: block;
+  margin: 20px auto;
+  max-width: 457px;
+  height: 127px;
+}
+
+.google-link img{
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+
+.google-link a{
+  transition: all 0.5s 0s ease;
+}
+
+.google-link a:hover{
+  transform: scale(1.1);
+}
+
+.info{
+  background-color: #ffffffd2;
+  width: 50%;
+  min-width: 376px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  border-radius: 60px;
+}
+
+.info h2{
+  border-bottom: 1px solid #9c8f75c5;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.5em;
+  padding: 30px 0;
+}
+
+.info p{
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  letter-spacing: 0.3rem;
+}
+
+.important{
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+@media(max-width:1024px){
+
+.info{
+  width: 90%;
+}
+
+}
+
+@media(max-width:480px){
+
+.leaf{
+  width: 80%;
+  background-image: url(../img/index/nature6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten; 
+}
+
+.info{
+  font-size: 90%;
+  border-radius: 0;
+}
+.map{
+  margin-top: 50px;
+}
+}

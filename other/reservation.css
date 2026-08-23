@@ -1,0 +1,168 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+main{
+  margin: 70px auto 0;
+  width: 100%;
+  max-width: 1920px;
+  background-image: url(../assets/img/menu/nature6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: lighten; 
+  text-align: center;
+}
+
+.top-logo{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  filter: drop-shadow(3px 3px 8px #fff);
+  letter-spacing: 0.2em;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #5a473d;
+  }
+
+.leaf{
+  position: relative;
+  top: 20px;
+  padding: 0;
+  margin: 0 auto; 
+  width: 370px;
+  height: 280px;
+  background-image: url(../assets/img/common/flowerframe-rs.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(5px 5px 5px #7b726d87);
+}
+
+.contact{
+  width: 100%;
+  max-width: 900px;
+  height:auto;
+  background-color: #ffffffbc;
+  border-radius: 60px;
+  margin: 40px auto 120px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2{
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-top: 20px;
+  letter-spacing: 0.2em;
+}
+
+.contact-form{
+  margin: 20px auto;
+  padding: 40px;
+}
+
+.field {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+input,
+textarea{
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #999999a9;
+}
+
+input[type="date"] {
+  width: 200px;
+}
+
+.section{
+  width: 100%;
+  max-width: 1920px;
+  height:auto;
+  background-color: #ffffffbc;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: #000;
+  text-align: center;
+}
+
+.section h4{
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.section p{
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+#select{
+  width: 100%;
+  max-width: 300px;
+  height: 25px;
+  border: none;
+  border-bottom: 1.5px solid #999999a9;
+}
+
+#message{
+  height: 150px;
+}
+
+#required::after{
+  content: '必須';
+  font-size: 0.8rem;
+  color: #b03a3a;
+  margin-left: 10px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; 
+  cursor: pointer;
+}
+
+@media(max-width:820px){
+  .contact{
+    width: 90%;
+  }
+}
+@media(max-width:480px){
+
+.contact{
+  border-radius: 20px;
+}
+
+.contact-form{
+  padding: 0;
+}
+
+.contact h2{
+  font-size: 1.3rem;
+}
+
+.contact p{
+  font-size: 80%;
+  text-align: left;
+}
+
+.section{
+  width: 90%;
+  padding: 10px;
+  font-size: 80%;
+  line-height: 1.2rem;
+}
+}
